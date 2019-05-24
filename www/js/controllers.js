@@ -1,7 +1,13 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
-
+  $(document).ready(function() {
+    var alto = $( window ).height();
+    //ajustar fondo
+    $( ".fondoblanco" ).css({
+      height: alto
+    })
+  });
 })
 
 .controller('ChatsCtrl', function($scope) {
@@ -10,9 +16,13 @@ angular.module('starter.controllers', [])
   var blnJuegoFinalizado=false;
 
   $(document).ready(function(){
+
+    $("body").css({
+      "background-color":"black"
+    })
     //establecer la cantidad de figuras distintas que tenemos
     //y cuantas veces debemos iterar para dibujar la cuadricula correctamente
-    var strCuadros=[1,2,3,4,5,6], iRepeticiones=4;
+    var strCuadros=[1,2,3,4,5,6,7,8], iRepeticiones=2;
     
     //evento al hacer clic en los items de la lista
     $('ul li').live('click',function(){

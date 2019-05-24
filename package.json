@@ -1,5 +1,5 @@
 {
-  "name": "BioApp",
+  "name": "Bio",
   "version": "0.0.1",
   "description": "An Ionic project",
   "devDependencies": {
@@ -8,9 +8,5 @@
     "gulp-clean-css": "^3.7.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "@ionic/pro": "2.0.4",
-    "bootstrap": "^4.3.1"
   }
 }
